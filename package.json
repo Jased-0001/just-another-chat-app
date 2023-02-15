@@ -1,0 +1,16 @@
+{
+  "name": "JustAnotherChatApp",
+  "version": "02.15.23",
+  "description": "just another chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jasedxyz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
