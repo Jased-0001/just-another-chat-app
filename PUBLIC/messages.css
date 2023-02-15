@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@media (prefers-color-scheme: dark) {
+  #messages > li:nth-child(odd) {
+    background: #363535;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #messages > li:nth-child(odd) {
+    background: #9b9b9b;
+  }
+}
+
+#messages {
+  list-style-type: none;
+  text-shadow: 0 0 20px #000;
+  color: white;
+  
+  margin: 0;
+  padding: 0;
+
+  word-wrap: break-word;
+}
+
+#messages > li {
+  padding: 0.25rem 0.5rem;
+
+  word-wrap: break-word; 
+}

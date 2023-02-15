@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+html, body {
+  margin: 0;
+  
+  text-decoration: none;
+    
+  padding-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(26,26,26);
+    background: -moz-linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(40,40,40,1) 50%, rgba(52,52,52,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(40,40,40,1) 50%, rgba(52,52,52,1) 100%);
+    background: linear-gradient(90deg, rgba(26,26,26,1) 0%, rgba(40,40,40,1) 50%, rgba(52,52,52,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1a1a",endColorstr="#343434",GradientType=1);
+    color: white;
+  }
+
+  #chatbox > button {
+    background: #333;
+    color: #fff;
+  }
+  
+  #chatbox > button:hover {
+    background: #555;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: rgb(225,225,225);
+    background: -moz-linear-gradient(270deg, rgba(225,225,225,1) 0%, rgba(216,216,216,1) 50%, rgba(196,196,196,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(225,225,225,1) 0%, rgba(216,216,216,1) 50%, rgba(196,196,196,1) 100%);
+    background: linear-gradient(270deg, rgba(225,225,225,1) 0%, rgba(216,216,216,1) 50%, rgba(196,196,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e1e1",endColorstr="#c4c4c4",GradientType=1);
+    color: 000;
+  }
+
+  #chatbox > button {
+    background: #ffffff;
+    color: #000;
+  }
+  
+  #chatbox > button:hover {
+    background: #b0b0b0;
+  }
+}
+
+/* message form */
+
+#chatbox {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  
+  border-top-style: solid;
+  border-top-color: #666;
+
+  /* From https://css.glass */
+  background: rgba(25, 25, 25, 0.45);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#chatinput {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+
+#chatinput:focus {
+  outline: none;
+}
+
+#chatbox > button {
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+}
+
+a { 
+  text-decoration: none; 
+  color: white; 
+}
