@@ -1,10 +1,9 @@
-var fs = require('fs');
-let express = require('express');
-var app = require('express')();
-var http = require('http');
-var httpServer = http.Server(app);
-let io = require('socket.io')(httpServer);
-const path = require('path');
+const express    = require('express');
+var   app        = require('express')();
+const http       = require('http');
+var   httpServer = http.Server(app);
+var   io         = require('socket.io')(httpServer);
+const path       = require('path');
 
 var util = require('util');
 var users = [];

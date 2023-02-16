@@ -7,8 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Jasedxyz",
+  "author": "Jase Williams <jased@jased.xyz> (https://jased.xyz/)",
   "license": "MIT",
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jased-0001/just-another-chat-app.git"
+  },
+  
   "dependencies": {
     "express": "^4.18.2",
     "socket.io": "^4.5.4"
