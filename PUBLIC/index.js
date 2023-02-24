@@ -1,9 +1,9 @@
-var socket = io();
+var socket    = io();
 
-var messages = document.getElementById('messages');
-var chatbox = document.getElementById('chatbox');
+var messages  = document.getElementById('messages');
+var chatbox   = document.getElementById('chatbox');
 var chatinput = document.getElementById('chatinput');
-var usern = undefined;
+var usern     = undefined;
 var unattendedPings = 0;
 
 var dnd = false;
@@ -97,9 +97,11 @@ socket.on('chat message', function(msg) {
   usernameItalics.style.opacity   = '50%';
 
   // set up profile picture
-  if(msg.pfp != null || msg.pfp != undefined) {
+  if(
+    msg.pfp != null || msg.pfp != undefined || msg.pfp == "") {
+    alert(`"${msg.pfp}" url "${msg.username}" username`);
     pfp.src                = msg.pfp;
-    pfp.alt                = msg.usern;
+    pfp.alt                = msg.username;
     pfp.style.width        = "20px";
     pfp.style.height       = "20px";
     pfp.style.borderRadius = "50px"
@@ -110,7 +112,6 @@ socket.on('chat message', function(msg) {
     msgContent.appendChild(usernameItalics);
     messages.appendChild(msgContent);
   } else {
-    // no prifile picture
     msgContent.appendChild(usernameItalics);
     messages.appendChild(msgContent);
   }
