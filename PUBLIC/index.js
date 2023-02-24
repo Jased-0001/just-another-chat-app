@@ -99,7 +99,6 @@ socket.on('chat message', function(msg) {
   // set up profile picture
   if(
     msg.pfp != null || msg.pfp != undefined || msg.pfp == "") {
-    alert(`"${msg.pfp}" url "${msg.username}" username`);
     pfp.src                = msg.pfp;
     pfp.alt                = msg.username;
     pfp.style.width        = "20px";
